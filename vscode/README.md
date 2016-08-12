@@ -8,5 +8,6 @@
 
 **Enjoy!**
 
+### Example of highlighted prototxt with One Dark theme
 ![screenshot](https://raw.githubusercontent.com/lklabs/prototxt-highlighting/master/vscode/images/prototxt-example.png)
 
