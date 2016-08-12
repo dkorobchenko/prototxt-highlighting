@@ -8,5 +8,5 @@
 
 **Enjoy!**
 
-![screenshot](images/prototxt-example.png)
+![screenshot](https://raw.githubusercontent.com/lklabs/prototxt-highlighting/master/vscode/images/prototxt-example.png)
 
