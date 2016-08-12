@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<key>scopeName</key>
+	<string>source.prototxt</string>
+	
+	<key>fileTypes</key>
+	<array>
+		<string>prototxt</string>
+	</array>
+
+	<key>foldingStartMarker</key>
+	<string>\{\s*$</string>
+
+	<key>foldingStopMarker</key>
+	<string>^\s*\}</string>	
+
+	<key>name</key>
+	<string>prototxt</string>
+
+	<key>patterns</key>
+	<array>
+
+		<dict>
+			<key>name</key>
+			<string>keyword.other.prototxt</string>
+			<key>match</key>
+			<string>\b(layer)\b</string>					
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>comment.line.number-sign.prototxt</string>
+			<key>match</key>
+			<string>#.*$\n?</string>	
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>constant.numeric.prototxt</string>
+			<key>match</key>
+			<string>(?x:         # turn on extended mode
+			-?         # an optional minus
+			(?:
+			0        # a zero
+			|        # ...or...
+			[1-9]    # a 1-9 character
+			\d*      # followed by zero or more digits
+			)
+			(?:
+			(?:
+			\.     # a period
+			\d+    # followed by one or more digits
+			)?
+			(?:
+			[eE]   # an e character
+			[+-]?  # followed by an option +/-
+			\d+    # followed by one or more digits
+			)?       # make exponent optional
+			)?         # make decimal portion optional
+			)</string>			
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>string.quoted.double.prototxt</string>
+			<key>begin</key>
+			<string>"</string>			
+			<key>end</key>
+			<string>"</string>
+			<key>patterns</key>
+			<array>				
+				<dict>
+					<key>name</key>
+					<string>constant.character.escape.prototxt</string>
+					<key>match</key>
+					<string>\\.</string>
+				</dict>
+			</array>
+		</dict>
+		
+	</array>
+
+</dict>
+</plist>
