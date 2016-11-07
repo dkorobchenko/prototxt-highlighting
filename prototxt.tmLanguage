@@ -41,26 +41,7 @@
 			<key>name</key>
 			<string>constant.numeric.prototxt</string>
 			<key>match</key>
-			<string>(?x:         # turn on extended mode
-			-?         # an optional minus
-			(?:
-			0        # a zero
-			|        # ...or...
-			[1-9]    # a 1-9 character
-			\d*      # followed by zero or more digits
-			)
-			(?:
-			(?:
-			\.     # a period
-			\d+    # followed by one or more digits
-			)?
-			(?:
-			[eE]   # an e character
-			[+-]?  # followed by an option +/-
-			\d+    # followed by one or more digits
-			)?       # make exponent optional
-			)?         # make decimal portion optional
-			)</string>			
+			<string>\b([-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)\b</string>
 		</dict>
 
 		<dict>

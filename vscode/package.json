@@ -3,7 +3,7 @@
     "displayName": "prototxt",
     "description": "prototxt syntax highlighting, useful for Caffe users",
     "icon": "images/icon.png",
-    "version": "0.0.3",
+    "version": "0.0.6",
     "publisher": "dmitry-korobchenko",
     "engines": {
         "vscode": "^1.0.0"
